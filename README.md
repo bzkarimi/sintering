@@ -1,0 +1,2 @@
+# sintering
+Ostwald sintering code

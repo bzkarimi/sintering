@@ -6,9 +6,9 @@ To run the code you need 3 input files: INIT, DATA, and PES.
 
 1. INIT: Contains the initial positions of each cluster on the surface along with their radius and energy. Note that the energy should be in hartree.
 
+The file structure is:
 
-ElementSymbol   R               X               Y               E
-num of atoms in the cluster
+num of atoms in the cluster   R               X               Y               E
 
 2. DATA: It's the database which contains all the energies of different cluster sizes.
 

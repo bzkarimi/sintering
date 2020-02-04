@@ -36,7 +36,7 @@ _**autoinit.py**_: Automatically generates the initial cluster size, radius, ene
 
 The file structure is:
 
-NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
+NumofAtomsintheCluster      R(\AA)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
 
 **INIT**: Contains the initial positions of each cluster on the surface along with their corresponding radius and energy. **Note**: that the energy should be in hartree.
 

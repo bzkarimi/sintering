@@ -4,7 +4,7 @@ Sintering via Ostwald Ripening written in *Python 3*
 
 Copyright (C) 2020 Borna Zandkarimi
 
-`\phi`
+$\phi$
 
 **General comments regarding the code**:
 
@@ -14,7 +14,7 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on a s
 
 **How to run the code**:
 
-`**Step 0**: Before running the code, you need to set 4 input files: **INIT**, **DATA**, **PES**, and _**param.py**_. Note that **INIT** which contains the initial cluster coordinates, radius, and energies can be generated manually or automatically using _**autoinit.py**_. **DATA** contains cluster size, cluster radius, and cluster energy. **PES** contains the single atom potential energy surface on the support of interest. _**param.py**_ contains the parameters needed to run the simulation. For more detailed description of each file refer to the last section of this file.`
+**Step 0**: Before running the code, you need to set 4 input files: **INIT**, **DATA**, **PES**, and _**param.py**_. Note that **INIT** which contains the initial cluster coordinates, radius, and energies can be generated manually or automatically using _**autoinit.py**_. **DATA** contains cluster size, cluster radius, and cluster energy. **PES** contains the single atom potential energy surface on the support of interest. _**param.py**_ contains the parameters needed to run the simulation. For more detailed description of each file refer to the last section of this file.
 
 **Step 1**: First, you need to generate the initial clusters along with their coordinates. This can be done automatically using _**autoinit.py**_ file. You just need to set 3 parameters **num_clust**, **num_single_atom**, and **largest_cluster** in _**param.py**_ and then run _**autoinit.py**_. The Description of each parameter can be found in _**param.py**_.
 

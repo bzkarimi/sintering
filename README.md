@@ -4,15 +4,15 @@ Sintering via Ostwald Ripening written in *Python 3*
 
 Copyright (C) 2020 Borna Zandkarimi
 
-**General comments regarding the code**
+**General comments regarding the code**:
 
 This code is a 2D simulation of sintering of nanometer clusters deposited on a surface. Specifically, it has the information needed to simulate Ptn clusters deposited on rutile TiO2(110) surface. It uses the ensemble-average modeling of fluxional clusters (n = 2-8 in this case), i.e. for each cluster size all thermally-accessible isomers, rather than only global minimum structure, are considered at reaction temperature. For clusters larger than that, it is assumed that there is only one isomer per cluster size. Note that this code can be used for all clusters and surfaces. You just need to edit PES and DATA files accordingly. You need to have the PES of a single atom of the cluster deposited on the surface in PES file, and energies corresponding to the clusters of interest in DATA file.
 
 **----------------------------------------------------------------------------------------------------------------------**
 
-**How to run the code**
+**How to run the code**:
 
-**Step 0**: Before running the code, you need to set 4 input files: **INIT**, **DATA**, **PES**, and _**param.py**_. Note that **INIT** which contains the initial cluster coordinates, radius, and energies can be generated manually or automatically using _**param.py**_. **DATA** contains cluster size, cluster radius, and cluster energy. **PES** contains the single atom potential energy surface on the support of interest. _**param.py**_ contains the parameters needed to run the simulation. For more detailed description of each file refer to the last section of this file. 
+**Step 0**: Before running the code, you need to set 4 input files: **INIT**, **DATA**, **PES**, and _**param.py**_. Note that **INIT** which contains the initial cluster coordinates, radius, and energies can be generated manually or automatically using _**autoinit.py**_. **DATA** contains cluster size, cluster radius, and cluster energy. **PES** contains the single atom potential energy surface on the support of interest. _**param.py**_ contains the parameters needed to run the simulation. For more detailed description of each file refer to the last section of this file. 
 
 **Step 1**: First, you need to generate the initial clusters along with their coordinates. This can be done automatically using _**autoinit.py**_ file. You just need to set 3 parameters **num_clust**, **num_single_atom**, and **largest_cluster** in _**param.py**_ and then run _**autoinit.py**_. The Description of each parameter can be found in _**param.py**_.
 
@@ -26,7 +26,7 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on a s
 
 **----------------------------------------------------------------------------------------------------------------------**
 
-**Description of each file (alphabetically)**
+**Description of each file (alphabetically)**:
 
 _**autoinit.py**_: Automatically generates the initial cluster size, radius, energy and coordinates based on the 3 parameters **num_clust**, **num_single_atom**, and **largest_cluster** in _**param.py**_.
 

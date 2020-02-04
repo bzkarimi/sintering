@@ -1,6 +1,6 @@
 # sintering
 
-Sintering via Ostwald Ripening
+Sintering via Ostwald Ripening written in *Python 3*
 
 Copyright (C) 2020 Borna Zandkarimi
 
@@ -10,9 +10,13 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on a s
 
 **How to Run the code**
 
-To run the code you need to set 4 input files: INIT, DATA, PES, and param.py. Also, the code is written in *Python 3*.
+**Step 0**: Before running the code, you need to set 4 input files: INIT, DATA, PES, and *param.py*. Note that INIT can be generated manually or automatically using *param.py*.
 
-First, you need to generate the initial clusters along with their coordinates. This can be done automatically using *autoinit.py* file. You just need to set 3 parameters *num_clust*, *num_single_atom*, and *largest_cluster* in *param.py* and then run *autoinit.py*. The Description of each parameter can be found in *param.py*.
+**Step 1**: First, you need to generate the initial clusters along with their coordinates. This can be done automatically using *autoinit.py* file. You just need to set 3 parameters **num_clust**, **num_single_atom**, and **largest_cluster** in *param.py* and then run *autoinit.py*. The Description of each parameter can be found in *param.py*.
+
+**Step 2**: After running *param.py*, a figure of the initial cell with cluster sizes will be shown. If you are not satisfied with the distribution you can change the parameters and rerun *param.py*. Also, INIT file will be generated. You can manually change the clusters if you wish.
+
+**Note**: *param.py* will automatically suggest a decent supercell size based on the primitive cell parameters and generated clusters. Make sure to modify the **maxx** and **maxy** parameters in *param.py* accordingly.
 
 **Description of each file**
 

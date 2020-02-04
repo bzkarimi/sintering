@@ -7,7 +7,7 @@ Copyright (C) 2020 Borna Zandkarimi
 **General comments regarding the code**
 
 This code is a 2D simulation of sintering of nanometer clusters deposited on a surface. Specifically, it has the information needed to simulate Ptn clusters deposited on TiO2(110) surface. It uses the ensemble-average modeling of fluxional clusters (n = 2-8 in this case), i.e. for each cluster size all thermally-accessible isomers, rather than only global minimum structure, are considered at reaction temperature. For clusters larger than that, it is assumed that there is only one isomer per cluster size. Note that this code can be used for all clusters and surfaces. You just need to edit PES and DATA files accordingly. You need to have the PES of a single atom of the cluster deposited on the surface in PES file, and energies corresponding to the clusters of interest in DATA file.
-
+**----------------------------------------------------------------------------------------------------------------------**
 **How to Run the code**
 
 **Step 0**: Before running the code, you need to set 4 input files: INIT, DATA, PES, and *param.py*. Note that INIT can be generated manually or automatically using *param.py*.

@@ -4,6 +4,8 @@ Sintering via Ostwald Ripening written in *Python 3*
 
 Copyright (C) 2020 Borna Zandkarimi
 
+$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
+
 ## **General comments regarding the code**:
 
 This code is a 2D simulation of sintering of nanometer clusters deposited on a surface. Specifically, it has the information needed to simulate Ptn clusters deposited on rutile TiO2(110) surface. It uses the ensemble-average modeling of fluxional clusters (n = 2-8 in this case), i.e. for each cluster size all thermally-accessible isomers, rather than only global minimum structure, are considered at reaction temperature. For clusters larger than that, it is assumed that there is only one isomer per cluster size. Note that this code can be used for all clusters and surfaces. You just need to edit PES and DATA files accordingly. You need to have the PES of a single atom of the cluster deposited on the surface in PES file, and energies corresponding to the clusters of interest in DATA file.

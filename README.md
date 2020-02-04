@@ -4,7 +4,7 @@ Sintering via Ostwald Ripening written in *Python 3*
 
 Copyright (C) 2020 Borna Zandkarimi
 
-\phi
+`\phi`
 
 **General comments regarding the code**:
 

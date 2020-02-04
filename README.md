@@ -2,9 +2,9 @@
 
 Sintering via Ostwald Ripening written in *Python 3*
 
-Copyright (C) 2020 Borna Zandkarimi
+Copyright &copy 2020 Borna Zandkarimi
 
-$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
+&angst
 
 ## **General comments regarding the code**:
 

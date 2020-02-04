@@ -28,17 +28,13 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on a s
 
 * **Cluster-energies**: Contains the energies of Ptn clusters (n = 2-8) in hartree. This file is not necessary for simulation.
 
-* **DATA**: This file is actually the database which contains all the energies and radii of different cluster sizes up to n = 1000. Note that we assume once the number of atoms in the cluster reaches 9 we have only one cluster structure per cluster.
+* **DATA**: This file is actually the database which contains all the energies and radii of different cluster sizes up to n = 1000. Note that we assume once the number of atoms in the cluster reaches 9 we have only one cluster structure per cluster. The file structure is:
 
-The file structure is:
+  NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
 
-NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
+* **INIT**: Contains the initial positions of each cluster on the surface along with their corresponding radius and energy. **Note**: that the energy should be in hartree. The file structure is:
 
-* **INIT**: Contains the initial positions of each cluster on the surface along with their corresponding radius and energy. **Note**: that the energy should be in hartree.
-
-The file structure is:
-
-NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
+  NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative to the most stable cluster)
 
 * **LOG**: Contains information about the simulation time and it might also contain some messages regarding metropolis move rejections.
 
@@ -46,10 +42,8 @@ NumofAtomsintheCluster      R(A)       X(A)     Y(A)       E(hartree, relative t
 
 * _**param.py**_: Contains the value of input parameters for generating initial clusters and for simulation such as total number of Metropolis moves, writing step, temperature, etc. Detailed description of each parameter can be found as comment line inside the file.
 
-* **PES**: Potential energy surface (2D) of a single atom on the support obtained from PAW-DFT. In this case it is Pt/TiO2(110).
+* **PES**: Potential energy surface (2D) of a single atom on the support obtained from PAW-DFT. In this case it is Pt/TiO2(110). The file structure is:
 
-The file structure is:
-
-AtomSymbol    X      Y      E(hartree, relative to the most stable cluster)
+  AtomSymbol    X      Y      E(hartree, relative to the most stable cluster)
 
 * _**sintering.py**_: The main code of sintering via Ostwald Ripening based on metropolis moves and NVT ensemble.

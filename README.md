@@ -2,9 +2,9 @@
 
 Sintering via Ostwald Ripening written in *Python 3*
 
-Copyright &copy 2020 Borna Zandkarimi
+Copyright &copy; 2020 Borna Zandkarimi
 
-&angst
+&angst;
 
 ## **General comments regarding the code**:
 

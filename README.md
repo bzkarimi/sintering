@@ -30,11 +30,11 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on a s
 
 * **DATA**: This file is actually the database which contains all the energies and radii of different cluster sizes up to n = 1000. Note that we assume once the number of atoms in the cluster reaches 9 we have only one cluster structure per cluster. The file structure is:
 
-  #Atoms-in-the-Cluster &nbsp; &nbsp; R(&angst;) &nbsp; &nbsp; X(&angst;) &nbsp; &nbsp; Y(&angst;) &nbsp; &nbsp; E(hartree, relative to the most stable cluster)
+  Num-of-Atoms-in-the-Cluster &nbsp; &nbsp; R(&angst;) &nbsp; &nbsp; X(&angst;) &nbsp; &nbsp; Y(&angst;) &nbsp; &nbsp; E(hartree, relative to the most stable cluster)
 
 * **INIT**: Contains the initial positions of each cluster on the surface along with their corresponding radius and energy. **Note**: that the energy should be in hartree. The file structure is:
 
-  NumofAtomsintheCluster &nbsp; &nbsp; R(&angst;) &nbsp; &nbsp; X(&angst;) &nbsp; &nbsp; Y(&angst;) &nbsp; &nbsp; E(hartree, relative to the most stable cluster)
+  Num-of-Atoms-in-the-Cluster &nbsp; &nbsp; R(&angst;) &nbsp; &nbsp; X(&angst;) &nbsp; &nbsp; Y(&angst;) &nbsp; &nbsp; E(hartree, relative to the most stable cluster)
 
 * **LOG**: Contains information about the simulation time and it might also contain some messages regarding metropolis move rejections.
 

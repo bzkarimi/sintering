@@ -14,7 +14,7 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on the
 
 * **Step 1**: First, you need to generate the initial clusters along with their coordinates. This can be done automatically using _**autoinit.py**_ file. You just need to set 3 parameters **num_clust**, **num_single_atom**, and **largest_cluster** in _**param.py**_ and then run _**autoinit.py**_. The Description of each parameter can be found in _**param.py**_.
 
-* **Step 2**: After running _**param.py**_, a figure of the initial cell with cluster sizes will be shown. If you are not satisfied with the distribution you can change the parameters and rerun _**param.py**_. Also, INIT file will be generated. You can manually change the clusters if you wish.
+* **Step 2**: After running _**param.py**_, a figure of the initial cell with cluster sizes will be shown. If you are not satisfied with the distribution you can change the parameters and rerun _**autoinit.py**_. Also, after **INIT** is generated you can manually change the clusters' information if you wish.
 
 * **Note**: _**autoinit.py**_ will automatically suggest a decent supercell size based on the primitive cell parameters and generated clusters in the output terminal. Make sure to use that to modify the **maxx** and **maxy** parameters in _**param.py**_ accordingly.
 

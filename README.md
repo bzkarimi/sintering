@@ -18,7 +18,7 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on the
 
   **Note**: _**autoinit.py**_ will automatically suggest a decent supercell size based on the primitive cell parameters and generated clusters in the output terminal. Make sure to use that to modify the **maxx** and **maxy** parameters in _**param.py**_ accordingly.
 
-* **Step 3**: After having **INIT** set up, set all the desired simulation parameters in _**param.py**_. You can find the description of each parameter as a comment line inside _**param.py**_. 
+* **Step 3**: After having **INIT** set up, set all the desired simulation parameters in _**param.py**_. You can find the description of each parameter as comment line inside _**param.py**_. 
 
 * **Step 4**: Now you are ready to run _**sintering.py**_. After the simulation is done, you will get **metropolis** file, which contains information about the cluster size and energy distribution in each step and **LOG** file which contains some additional information such as the time of simulation.  
 

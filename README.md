@@ -42,7 +42,7 @@ This code is a 2D simulation of sintering of nanometer clusters deposited on the
 
 * _**param.py**_: Contains the value of input parameters for generating initial clusters and for simulation such as total number of Metropolis moves, writing step, temperature, etc. Detailed description of each parameter can be found as comment line inside the file.
 
-* **PES**: Potential energy surface (2D) of a single atom on the support obtained from PAW-DFT. In this case it is Pt/TiO2(110). The file structure is:
+* **PES**: Potential energy surface (2D) of a single atom on the support obtained from PAW-DFT. In this case it is Pt/TiO<sub>2</sub>(110). The file structure is:
 
   Atom-Symbol &nbsp; &nbsp; X(&angst;) &nbsp; &nbsp; Y(&angst;) &nbsp; &nbsp; E(hartree, relative to the most stable cluster)
 

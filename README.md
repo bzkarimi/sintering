@@ -6,7 +6,7 @@ Copyright &copy; 2020 Borna Zandkarimi
 
 ## **General comments regarding the code**:
 
-This code is a 2D simulation of sintering of nanometer clusters deposited on the surface. Specifically, it has the information needed to simulate Pt clusters deposited on rutile TiO2(110) surface. It uses the ensemble-average modeling of fluxional clusters (n = 2-8 in this case), i.e. for each cluster size all thermally-accessible isomers, rather than only global minimum structure, are considered at reaction temperature. For clusters larger than that, it is assumed that there is only one isomer per cluster size. Note that this code can be used for all clusters and surfaces. You just need to edit **PES** and **DATA** files accordingly. You need to have the PES of a single atom of the cluster deposited on the surface in **PES** file, and energies corresponding to the clusters of interest in **DATA** file.
+This code is a 2D simulation of sintering of nanometer clusters deposited on the surface. Specifically, it has the information needed to simulate Pt clusters deposited on rutile TiO<sub>2</sub>(110) surface. It uses the ensemble-average modeling of fluxional clusters (n = 2-8 in this case), i.e. for each cluster size all thermally-accessible isomers, rather than only global minimum structure, are considered at reaction temperature. For clusters larger than that, it is assumed that there is only one isomer per cluster size. Note that this code can be used for all clusters and surfaces. You just need to edit **PES** and **DATA** files accordingly. You need to have the PES of a single atom of the cluster deposited on the surface in **PES** file, and energies corresponding to the clusters of interest in **DATA** file.
 
 ## **How to run the code**:
 
